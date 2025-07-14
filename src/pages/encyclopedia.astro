@@ -1,0 +1,29 @@
+---
+import herbs from '../../data/herbs.json';
+---
+
+<html lang="en">
+  <head>
+    <title>Psychoactive Herb Index | Encyclopedia</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body class="bg-black text-white font-sans p-6">
+    <h1 class="text-4xl font-bold text-pink-400 mb-8">🌿 Encyclopedia of Psychoactive Herbs</h1>
+
+    {herbs.map((herb, index) => (
+      <details class="mb-4 border border-pink-500 rounded-md p-4 bg-black/30 backdrop-blur-md">
+        <summary class="cursor-pointer text-xl text-cyan-300 font-semibold">
+          {herb.name}
+        </summary>
+        <div class="mt-2 text-sm text-white">
+          <p><strong>Scientific Name:</strong> {herb.scientificName}</p>
+          <p><strong>Effects:</strong> {herb.effects}</p>
+          <p><strong>Preparation:</strong> {herb.preparation}</p>
+          <p><strong>Usage:</strong> {herb.usage}</p>
+          <p><strong>Legal Status:</strong> {herb.legalStatus}</p>
+          <p><strong>Region:</strong> {herb.region}</p>
+        </div>
+      </details>
+    ))}
+  </body>
+</html>
