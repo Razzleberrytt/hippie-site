@@ -1,0 +1,12 @@
+---
+const { herb, index } = Astro.props;
+---
+
+<details class="mb-4 border border-gray-300 p-4 rounded">
+  <summary class="cursor-pointer font-bold">{herb.name}</summary>
+  <ul class="mt-2 list-disc list-inside">
+    {Object.entries(herb).map(([key, value]) => key !== "name" && (
+      <li><strong>{key}:</strong> {value}</li>
+    ))}
+  </ul>
+</details>
