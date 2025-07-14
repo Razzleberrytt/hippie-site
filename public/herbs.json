@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Damiana",
+    "scientificName": "Turnera diffusa",
+    "category": "Relaxant",
+    "effects": "Euphoric, calming",
+    "preparation": "Tea or smoke"
+  },
+  {
+    "name": "Mugwort",
+    "scientificName": "Artemisia vulgaris",
+    "category": "Dream enhancer",
+    "effects": "Lucid dreams, sedation",
+    "preparation": "Tea or incense"
+  }
+]
