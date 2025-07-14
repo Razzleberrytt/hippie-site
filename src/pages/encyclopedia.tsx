@@ -1,4 +1,5 @@
-import herbs from '../data/herbs.json'; // or wherever your JSON is
+import herbs from '../data/herbs.json'; 
+import type { Herb } from '../types';// or wherever your JSON is
 
 export default function Encyclopedia() {
   return (
